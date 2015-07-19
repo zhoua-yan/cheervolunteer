@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family:"Microsoft YaHei UI";
+	padding:0;
+	margin:0;
+}
+ul{
+	padding:0px;
+	list-style-type:none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+body{
+	width:1349px;
+	height:auto;
+	background-color:rgb(30,86,109);
+	overflow:scroll;
+}
+.nav-tabs {
+    border-bottom:none;
+}
+#header{
+	height:46px;
+	width:1349px;
+	padding-left:10%;
+	position:fixed;
+	z-index:1;
+	top:0;
+	background-color:rgb(15,32,48);
+}
+#header>ul>li{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	background-color:transparent;	
+	padding:2px;
+	text-decoration:none;
+	float:left;
+	height:46px;
+	padding:15px 15px;
+	line-height:20px;
+}
+#header>ul>li a,#header>ul>li a:hover{
+	display:block;
+	height:50px;
+	width:inherit;
+	text-decoration:none;
+	text-shadow:2px 2px 2px #000;
+	color:#fff;
+	font-size:15px;
+}
+
+#header>ul>li.active,#header>ul>li:hover{
+	background-color:rgb(39,55,69);
+}
+.dropdown-menu{
+	background-color:rgb(15,32,48) !important;
+}
+
+.nav .open,.nav .open>a,.dropdown-menu>.active>a{
+	background-color: rgb(39,55,69) !important;
+}
+.navbar-nav>li>a:hover{
+	background-color:rgb(39,55,69) !important;
+}
+#pictureDiv{
+	width:100%;
+	position:relative;
+	top:46px;
+	margin-bottom:48px;
+}
+.carousel-inner img{
+	height:420px !important;
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+}
+.title{
+	height:100px;
+	width:inherit;
+	margin-bottom:60px;
+	display:-webkit-flex;
+	-webkit-box-sizing:border-box;
+	
+}
+.title>div{
+	-webkit-flex:1;
+	padding:20px;
+	color:#fff;
+	font-size:30px;
+	text-align:center;
+	text-shadow:rgba(0,0,0,0.8) 3px 3px 6px;
+	-webkit-box-shadow:0 0 3px rgba(0,0,0,0.3);
+}
+.title>div span{
+	font-size:36px;
+	font-weight:bold;
+	color:rgb(246,196,65);
+}
+.container{
+	width:70%;
+	height:auto;
+	margin-left:15%;
+	margin-right:15%;
+
+}
+.item-list{
+	margin-top:-28px;
+}
+
+.item-head{
+	height:34px;
+	width:34%;
+    padding:5px 0 0 20px;
+	border-radius:4px 4px 0 0;
+	box-shadow:3px 3px 6px rgba(0,0,0,0.4);
+	background-color:rgb(223,80,80);
+
+}
+.item-head>a{
+	color:#fff;
+	font-size:20px;
+	text-decoration:none;
+}
+.item-head>a>span{
+	color:#fff;
+	font-size:18px;
+}
+.item-content{
+	height:260px;
+	padding:15px;
+	box-shadow:4px 4px 5px rgba(0,0,0,0.5);
+	border-radius:0 0 10px 0;
+    background-color:#fff;
+}
+.content-picture{
+	height:200px;
+	width:160px;
+	padding:10px;
+	float:left;
+	border:1px solid #ccc;
+	box-shadow:3px 3px 3px #ccc;
+	overflow:hidden;
+}
+.content-picture>img{
+	height:160px;
+	width:140px;
+}
+.content-picture>p{
+	font-size:14px;
+}
+.content-information{
+	float:left;
+	height:200px;
+	width:680px;
+	margin-left:20px;
+	padding:20px;
+	border:1px solid #ccc;
+}
+.content-information>b{
+	font-size:24px;
+	line-height:50px;
+	color:rgb(15,32,48);	
+}
+.content-information>ul{
+	font-size:16px;
+	line-height:28px;
+}
+#mainDiv{
+	 height:auto;
+	 width:1000px;
+	 position:absolute;
+	 left:50%;
+	 margin-left:-500px;
+	 margin-top:100px;
+	 border-radius:6px;
+	 background:#fff;
+	 z-index: -2;
+	}
+#navbar{
+	height:50px;
+	width:auto;
+	background-color:rgb(30,86,109);
+}
+
+#buttonDiv{
+	height:50px;
+	width:400px;
+	float:right;
+	background-color:rgb(238,93,106);
+	border-color:rgb(223,80,80);
+	border-radius:5px 5px 0 0;
+	box-shadow:-1px -1px 6px rgba(0,0,0,0.3);
+}
+#buttonDiv>li{
+	width:25%;
+	height:50px;
+	border-style:none;
+	border-radius:5px 5px 0 0;
+	background-color:rgb(238,93,106);
+	margin:0;
+}
+#buttonDiv>li.active>a,#buttonDiv>li.active>a:focus{
+	color:rgb(223,80,80) !important;
+
+}
+#buttonDiv>li>a:hover{
+	color:rgb(223,80,80);
+}
+#buttonDiv>li a{
+	margin:0px; 
+	height:50px; 
+	font-size:24px; 
+	padding-left:36%;
+	color:#fff;
+
+}
+.contextDiv{
+	height:auto;
+	width:100%;
+	margin-top:0px;
+	padding:10px;
+	z-index: -2;
+}
+
+.info,.about,.hobby,.exper{
+	position: relative;
+	height: 250px;
+	width: 100%;
+	border:2px solid #efefef;
+	margin-bottom:30px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+}
+.about,.hobby,.exper{
+	margin-left: 5px;
+	width: 99%;
+	height: 350px;
+}
+.usrImage{
+	float: left;
+	height: 200px;
+	width: 200px;
+	margin: 5px;
+	border:5px solid #fff;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	background-image: url(../image/userImage.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.effect{
+	position: relative;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+}
+		/*:after,:before是在元素内部的前后添加内容，“content”必须有，不然无效,用两层加强实感*/
+.effect:after,.effect:before{
+	content: '';
+	position:absolute;
+	top: 50%;
+	bottom: 0;
+	left: 20px;
+	z-index: -1;
+	right: 20px;
+	border-radius: 100px/10px;
+	box-shadow:0 0 20px rgba(0,0,0,0.8);
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+.text{
+	margin-left:250px;
+	margin-right: 50px;
+	line-height: 30px;
+	font-size: 16px;
+}
+.text>p:nth-child(2n){
+	float: right;
+}
+.text h2 a{
+	text-decoration: none;
+	float: right;
+	font-size: 16px;
+	color: rgb(15,32,48);
+}
+.context-title{
+	position: absolute;
+	left: -8px;
+	top: -8px;
+	height: 40px;
+	width: 150px;
+	padding: 8px;
+	text-align: center;
+	background-color: rgba(15,32,48,0.9);
+	color: #fff;
+	font-size: 18px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+
+}
+.context-title span{
+	font-size: 22px;
+	margin-right: 10px;
+}
+#centureDiv{
+	height:800px;
+	width:980px;
+	margin-top:10px;	
+}
+.footDiv{
+	height: 40px;
+	width: inherit;
+	color: #fff;
+	text-align: center;
+}
+
+
+
