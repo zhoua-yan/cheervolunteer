@@ -12,6 +12,10 @@ ul{
 a{
 	text-decoration: none;
 	color: #fff;
+	cursor: pointer;
+}
+a:hover{
+	text-decoration: none;
 }
 body{
 	width:1349px;
@@ -27,7 +31,7 @@ body{
 	width:1349px;
 	padding-left:10%;
 	position:fixed;
-	z-index:1;
+	z-index:100;
 	top:0;
 	background-color:rgb(15,32,48);
 }
@@ -48,24 +52,29 @@ body{
 	height:50px;
 	width:inherit;
 	text-decoration:none;
-	text-shadow:2px 2px 2px #000;
 	color:#fff;
-	font-size:15px;
+	font-size:16px;
 }
-
 #header>ul>li.active,#header>ul>li:hover{
 	background-color:rgb(39,55,69);
 }
 .dropdown-menu{
 	background-color:rgb(15,32,48) !important;
 }
-
-.nav .open,.nav .open>a,.dropdown-menu>.active>a{
-	background-color: rgb(39,55,69) !important;
+.dropdown-menu>li>a{
+	line-height: 40px;
 }
-.navbar-nav>li>a:hover{
-	background-color:rgb(39,55,69) !important;
+.dropdown-menu>li>a:hover,.navbar-nav>li>a:hover{
+	background-image: none;
+	background-color:rgb(39,55,69);
 }
+.footDiv{
+	height: 40px;
+	width: inherit;
+	color: #fff;
+	text-align: center;
+}
+/*-------------------css for home.html----------------------*/
 #pictureDiv{
 	width:100%;
 	position:relative;
@@ -82,18 +91,29 @@ body{
 	height:100px;
 	width:inherit;
 	margin-bottom:60px;
+	display:flex;
 	display:-webkit-flex;
+	display:-moz-flex;
+	display:-o-flex;
+	box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
 }
 .title>div{
+	flex:1;
 	-webkit-flex:1;
+	-moz-flex:1;
+	-o-flex:1;
 	padding:20px;
 	color:#fff;
 	font-size:30px;
 	text-align:center;
 	text-shadow:rgba(0,0,0,0.8) 3px 3px 6px;
+	box-shadow:0 0 3px rgba(0,0,0,0.3);
 	-webkit-box-shadow:0 0 3px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 0 3px rgba(0,0,0,0.3);
+	-o-box-shadow:0 0 3px rgba(0,0,0,0.3);
 }
 .title>div span{
 	font-size:36px;
@@ -101,10 +121,10 @@ body{
 	color:rgb(246,196,65);
 }
 .container{
-	width:70%;
+	width:80%;
 	height:auto;
-	margin-left:15%;
-	margin-right:15%;
+	margin-left:10%;
+	margin-right:10%;
 
 }
 .item-list{
@@ -155,10 +175,9 @@ body{
 .content-information{
 	float:left;
 	height:200px;
-	width:680px;
+	width:780px;
 	margin-left:20px;
 	padding:20px;
-	border:1px solid #ccc;
 }
 .content-information>b{
 	font-size:24px;
@@ -169,12 +188,14 @@ body{
 	font-size:16px;
 	line-height:28px;
 }
+
+/*------------------------------css for myfile.html-------------------------*/
 #mainDiv{
 	 height:auto;
-	 width:1000px;
+	 width:1200px;
 	 position:absolute;
 	 left:50%;
-	 margin-left:-500px;
+	 margin-left:-600px;
 	 margin-top:100px;
 	 border-radius:6px;
 	 background:#fff;
@@ -185,7 +206,9 @@ body{
 	width:auto;
 	background-color:rgb(30,86,109);
 }
-
+.nav-tabs>li>a{
+	border: none;
+}
 #buttonDiv{
 	height:50px;
 	width:400px;
@@ -235,6 +258,8 @@ body{
 	background-color: #fff;
 	box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
 	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-o-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
 }
 .about,.hobby,.exper{
 	margin-left: 5px;
@@ -256,8 +281,12 @@ body{
 	position: relative;
 	box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
 	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-o-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+
 }
-		/*:after,:before是在元素内部的前后添加内容，“content”必须有，不然无效,用两层加强实感*/
+	/*:after,:before是在元素内部的前后添加内容，“content”必须有，不然无效,用两层加强实感*/
+
 .effect:after,.effect:before{
 	content: '';
 	position:absolute;
@@ -305,17 +334,57 @@ body{
 	font-size: 22px;
 	margin-right: 10px;
 }
-#centureDiv{
-	height:800px;
-	width:980px;
-	margin-top:10px;	
+/*------------------------------css for myItem.html-------------------------*/
+#myItem h2{
+	margin-left: 20px;
+	color: rgb(15,32,48);
 }
-.footDiv{
-	height: 40px;
-	width: inherit;
-	color: #fff;
-	text-align: center;
+#myItem h2 span{
+	color: rgb(15,32,48);
+	font-size: 40px;
+}
+#myItem hr{
+	width: 40%;
+	border:1px solid #ccc;
+	margin-left: 20px;
+}
+.itemNavContainer{
+	position: absolute;
+	left: 30px;
+	top: 200px;
+	height: 200px;
+	width: 110px;
+	font-size: 16px;
 }
 
+.itemNavContainer a{
+	color:#333;
+	line-height: 40px;
+}
+.itemNavContainer a:hover{
+	color:red;
+}
+.itemContainer{
+	position: relative;
+	left: 150px;
+	margin-top:20px;
+	height: auto;
+	width: 84%;
+}
+.items{
+	position: relative;
+	height: 250px;
+	width: 100%;
+	border:2px solid #eee;
+	margin-bottom:30px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.2) inset;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.2) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.2) inset;
+	-o-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.2) inset;
+}
+.content-information ul>li:nth-child(2n){
+	float: right;
+}
 
 
