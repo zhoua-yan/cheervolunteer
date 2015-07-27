@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Welcome to cheervolunteer!</title>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/qile.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/cheervolunteer.css" rel="stylesheet">
+
+<title>启乐cheeervolunteer-我的志愿项目</title>
+</head>
+
+<body>
+<nav id="header" class="nav nav-tabs">
+    <ul>
+      <li><a href="home.html">Cheervolunteer</a></li>
+      <li><a href="home.html">首页</a></li>
+      <li class="active"><a href="#" data-toggle="tab">我的档案</a></li>
+      <li class="dropdown" id="item"><a href="#" class="dropdown-toggle" data-toggle="dropdown">志愿活动 <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+               <li><a href="#" data-toggle="tab">找线上</a></li>
+               <li><a href="#" data-toggle="tab">找线下</a></li>
+               <li><a href="#"data-toggle="tab">长期项目</a></li>
+               <li class="divider"></li>
+               <li><a href="#" data-toggle="tab">我的个人资料</a></li>
+               <li class="divider"></li>
+               <li><a href="#" data-toggle="tab">项目申请反馈</a></li>
+            </ul>
+       </li>
+       <li><a href="#">志愿机构</a></li>
+       <li class="dropdown" id="more"><a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+               <li><a href="#">启乐社区</a></li>
+               <li><a href="#">联系我们</a></li>
+               <li><a href="#">我要投诉</a></li>
+            </ul>
+       </li>
+       <li style="margin-left:200px;"><a href="#" alt="邀请" title="邀请"><img height="20px" src="image/invitation.png" /></a></li>
+       <li><a href="#" alt="私信" title="私信"><img height="18px" src="image/message.png"/></a></li>
+       <li><a href="#" alt="通知" title="通知"><img height="20px" src="image/flag.png"/></a></li>
+     </ul>
+</nav>
+<div class="tab-content">
+  <section id="page2"  class="tab-pane active" data-title="我的主页">
+    <div id="mainDiv">
+      <div id="navbar">
+        <ul id="buttonDiv" class="nav nav-tabs">
+         <li><a href="myfile.html"><span class="glyphicon glyphicon-home" title="我的档案"></span></a></li>
+         <li><a href="myItem.html"><span class="glyphicon glyphicon-user" title="我的志愿项目"></span></a></li>
+         <li  class="active"><a href="#"><span class="glyphicon glyphicon-envelope" title="我的私信"></span></a></li>
+         <li><a href="myHistory.html"><span class="glyphicon glyphicon-th" title="我的历史足迹"></span></a></li>
+        </ul>
+      </div>
+      <div class="tab-content">
+          <div id="myItem" class="contextDiv tab-pane active">
+            <h2><span class="glyphicon glyphicon-envelope"></span>&nbsp我的消息</h2>
+            <hr>
+            <div class="itemNavContainer">
+              <p><a style="color:red">通知(<span id="info1">1</span>)</a></p>
+              <p><a>邀请(<span id="info2">8</span>)</a></p>
+              <p><a>私信(<span id="info3">4</span>)</a></p>
+              <p><a>系统通知(<span id="info4">2</span>)</a></p>
+            </div>
+            <div class="itemContainer">
+              <div class="items mail-item">
+                <div class="content-picture"><img src="image/logo.png" /></div>
+                <div class="content-information">
+                  <b>阳光晨跑，绿色健身</b>&nbsp;&nbsp;
+                  <ul>
+                    <li><b>您的申请已通过！请认真核对活动时间与地点,按时参加。</b></li>
+                    <li>活动时间：2015年5月4日 10:00</li>
+                    <li>活动地点：昌平区沙河高教园中央财经大学</li>
+                    <li><input type="button" class="btn cancel" name="cancel" value="请假" data-toggle="modal" 
+   data-target="#myModal"/></li>
+                  </ul> 
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+       aria-labelledby="myModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+          <div class="modal-content">
+             <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">#请向志愿机构提交请假理由#</h4>
+             </div>
+             <div class="modal-body">
+              <!-- 提交假条数据post -->
+                <textarea cols="60" placeholder="注：如无故取消志愿报名则会扣除相应信誉度。"></textarea>
+             </div>
+             <div class="modal-footer">
+                <button type="button" class="btn modal-btn" data-dismiss="modal">取消</button>
+                <button type="submit" class="btn modal-btn">提交假条</button>
+             </div>
+          </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+    </div>
+  </section>
+</div>
+<div class="footDiv">
+  <h6> Copyright <font size="3">&copy</font> 2015 by cheervolunteer. All Rights Reserved.&nbsp;|&nbsp;<a target="_blank" href="http://www.miitbeian.gov.cn/">京ICP备14048595号-1</a><h6> 
+</div>
+
+</body>
+</html>
