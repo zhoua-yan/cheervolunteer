@@ -431,6 +431,7 @@ h2 .glyphicon{
 }
 .modal-backdrop.in{
 	opacity: 0.8;
+}
 /*------------------------------css for orglist.html-------------------------*/
 #buttonDiv2{
 	height:50px;
@@ -441,7 +442,6 @@ h2 .glyphicon{
 	border-radius:5px 5px 0 0;
 	box-shadow:-1px -1px 6px rgba(0,0,0,0.3);
 }
-
 #buttonDiv2>li{
 	width:33.3%;
 	height:50px;
