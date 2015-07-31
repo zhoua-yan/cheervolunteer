@@ -45,6 +45,11 @@ $(document).ready(function() {
 });
 
 </script>
+<script language="javascript">
+function loadimage(){
+document.getElementById("randImage").src = "authcode.jsp?"+Math.random();
+}
+</script> 
 <style type="text/css">
 body {
 	width:960px;
@@ -155,7 +160,7 @@ label{
 <body>
 <div id="denglu-yemian">
   <div id="form">
-  <form action="helpLogin" method="post" >
+  <form action="checkAuthCode.jsp" method="post" >
     <div id="username" class="inputBorder">
     <label>用户名：</label><input type="text" name="logname" id="userInput" class="inputsize" tabindex="1"/>&nbsp;&nbsp;&nbsp;<a href="注册页面.html" target="_blank">未注册？</a>&nbsp;&nbsp;
     </div>
@@ -165,13 +170,13 @@ label{
     </div>
 
     <div class="inputBorder yanZhengMa">
-    <label>验证码：</label><input type="text" name="username" class="inputsize inputyanzhengma" tabindex="3"/>&nbsp;
+    <label>验证码：</label><input type="text" name="rand" class="inputsize inputyanzhengma" tabindex="3"/>&nbsp;
     </div> 
 
     
     <div class="inputBorder yanZhengMa">
-    <input type="button" id="code"/> &nbsp;&nbsp;&nbsp;
-  <a href="#" id="codeChange" onClick="createCode()" >看不清？</a>&nbsp;&nbsp;&nbsp;
+    <img name="randImage" id="randImage" src="authcode.jsp"/> &nbsp;&nbsp;&nbsp;
+  <a href="javascript:loadimage();" id="codeChange"" >看不清？</a>&nbsp;&nbsp;&nbsp;
     </div>
 
     <div>
