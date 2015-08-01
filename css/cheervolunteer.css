@@ -493,7 +493,7 @@ h2 .glyphicon{
 }
 
 .interested-org-list{
-	height: 110px;;
+	height: 110px;
 	width: 100%;
 }
 .interested-org-list-image{
@@ -802,4 +802,222 @@ h2 .glyphicon{
 }
 .comment-list-1-1 a:visited, .comment-list-1-2 a:visited, .comment-list-1-3 a:visited{
 	color:rgb(15,32,48);
+}
+
+/*------------------------------css for activityList.html-------------------------*/
+#activityList-navigation{
+	float:left;
+	height:100%;
+	width:20%;
+}
+.act-nav-hot{
+	height:auto;
+	width:100%;
+	padding:20px;
+	line-height:35px;
+}
+.act-nav-hot, .act-main-list{
+	border:2px solid #efefef;
+	margin-bottom:30px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-o-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+}
+.act-nav-hot-link{
+	white-space:normal; 
+	height:auto;
+	width:100%;
+}
+.act-nav-hot>div>h4+a{
+	float:right;
+	position:relative;
+	bottom:25px;
+}
+.act-nav-hot a:link, .act-nav-hot a:visited, .act-context-list li>a:link, .act-context-list li>a:visited{
+	color:rgb(15,32,48);
+}
+.act-nav-hot a:hover, .act-context-list li>a:hover, .act-context-list li>span>a:hover{
+	color:rgb(238,93,106);
+}
+.act-nav-hot>div>h4+a:link, .act-nav-hot>div>h4+a:visited, .act-context-list li>span>a:link, .act-context-list li>span>a:visited{
+	color:rgb(30,86,109);
+}
+.act-nav-hot li{
+	text-decoration:none;   
+    overflow:hidden;   
+    text-overflow: ellipsis;   
+    white-space: nowrap;
+	word-break:keep-all;
+}
+.act-nav-hot li{
+    width:100%;
+}
+#activityList-main{
+	float:right;
+	height:100%;
+	width:78%;
+}	
+.act-main-list{
+	position: relative;
+	height:auto;
+	width:100%;
+	padding:30px;
+	margin-top:10px;
+}
+.act-context-list{
+	font-size:16px;
+	line-height:35px;
+	padding-top:30px;
+}
+
+/*------------------------------css for online.html-------------------------*/
+#online-navigation{
+	float:left;
+	height:auto;
+	width:28%;
+}
+#online-main{
+	float:right;
+	height:auto;
+	width:70%;
+	padding:20px;
+}	
+.online-nav-hot, #online-main{
+	border:2px solid #efefef;
+	margin-bottom:30px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-o-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+}
+.online-nav-hot{
+	height:auto;
+	width:100%;
+	padding:20px;
+	line-height:35px;
+}
+.on-main-list a:link, .on-main-list a:visited{
+	color:rgb(15,32,48);
+}
+.online-nav-hot>div>h4+a:link, .act-nav-hot>div>h4+a:visited, .online-nav-hot a:link, .online-nav-hot a:visited{
+	color:rgb(30,86,109);
+}
+.online-nav-hot a:hover, .on-main-list a:hover{
+	color:rgb(238,93,106);
+}
+.online-nav-hot>div>h4+a{
+	float:right;
+	position:relative;
+	bottom:25px;
+}
+.online-nav-hot-list-text>b>a{
+	width:100%;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis; 
+	text-overflow: ellipsis;
+}
+.online-nav-hot-list-text a{
+	text-decoration:none;
+}
+.on-nav-hot-list{
+	height:100px;
+	width:100%;
+	border:1px dashed #eeeeee;
+	margin-top:20px;
+}
+.on-nav-hot-list-img{
+	float: left;
+	height: 80px;
+	width: 80px;
+	margin: 10px;
+	background-image: url(../image/organization.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.on-nav-hot-list-text{
+	float:right;
+	height:80px;
+	width: 60%;
+	margin: 5px;
+}
+.on-nav-hot-list-text p{
+	color:rgb(185,185,185);
+	line-height:25px;
+}
+.on-main-list{
+	height:auto;
+	width:100%;
+	padding:20px;
+	font-size:16px;
+	color:rgb(135,135,135);
+}
+.on-main-list hr{
+	border:1px dashed #efefef;
+	width:100%;
+}
+.on-main-page{
+	height:auto;
+	width:100%;
+	padding:10px;
+	font-size:14px;
+	text-align:center;
+}
+
+/*------------------------------css for offline.html-------------------------*/
+#offline-nav{
+	float:left;
+	height:auto;
+	width:20%;
+}
+#offline-main{
+	float:right;
+	height:auto;
+	width:78%;
+}
+.offline-nav-hot{
+	border:2px solid #efefef;
+	margin-bottom:30px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+	-o-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+}
+.offline-nav-hot{
+	height:auto;
+	width:100%;
+	padding:20px;
+}
+.off-nav-hot-link{
+	height:auto;
+	width:100%;
+	padding:0 10px 0 10px;
+	line-height:35px;
+}
+.off-nav-hot-link a:link, .off-nav-hot-link a:visited, .off-nav-hot-list a:link, .off-nav-hot-list a:visited{
+	color:rgb(15,32,48);
+}
+.off-nav-hot-link a:hover, .off-nav-hot-list a:hover{
+	color:rgb(238,93,106);
+}
+.off-nav-hot-dropdown{
+	height:25px;
+	width:200px;
+	border:1px solid #cdcdcd;
+	border-radius:5px;
+	margin-bottom:10px;
+}
+.off-nav-hot-list{
+	line-height:30px;
+}
+.off-nav-hot-list li{
+	text-decoration:none;   
+    overflow:hidden;   
+    text-overflow: ellipsis;   
+    white-space: nowrap;
+	word-break:keep-all;
 }
