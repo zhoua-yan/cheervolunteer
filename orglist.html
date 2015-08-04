@@ -7,7 +7,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/qile.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/cheervolunteer.css" rel="stylesheet">
+<link href="css/newCheervolunteer.css" rel="stylesheet">
 
 <title>启乐cheeervolunteer-查看机构</title>
 </head>
@@ -59,32 +59,32 @@
 				<div id="interested-org">
 					<div><h4><b>可能感兴趣的机构</b></h4><hr></div>
 					<div class="interested-org-list">
-						<div class="interested-org-list-image"></div>
+						<div class="interested-org-list-image" id="orglist-recommend-companyimg1"></div>
 						<div class="interested-org-list-content">
-							<a href="#" alt="我们是xxxxxxxxxxxx公司" title="我是xxxxxxxxxxxxxxxxxx公司"><b>我们是xxxxxxxxxxxx公司</b></a><br>
+							<span id="orglist-recommend-company1"><a href="#" alt="我们是xxxxxxxxxxxx公司" title="我是xxxxxxxxxxxxxxxxxx公司" class="link-text-2"><b>我们是xxxxxxxxxxxx公司</b></a></span><br>
 							<div>
-								<p>啦啦啦啦杨洋好帅啊~</p>
-								<button type="button" class="btn btn-default btn-sm">关注我+</button>
+								<p id="orglist-recommend-intro1">啦啦啦啦杨洋好帅啊~</p>
+								<button type="button" class="btn btn-default btn-sm" id="orglist-recommend-concerned1">关注我+</button>
 							</div>
 						</div>
 					</div>
 					<div class="interested-org-list">
-						<div class="interested-org-list-image"></div>
+						<div class="interested-org-list-image" id="orglist-recommend-companyimg2"></div>
 						<div class="interested-org-list-content">
-							<a href="#" alt="我们是xxxxxxxxxxxx公司" title="我是xxxxxxxxxxxxxxxxxx公司"><b>我们是xxxxxxxxxxxx公司</b></a><br>
+							<span id="orglist-recommend-company2"><a href="#" alt="我们是xxxxxxxxxxxx公司" title="我是xxxxxxxxxxxxxxxxxx公司" class="link-text-2"><b>我们是xxxxxxxxxxxx公司</b></a></span><br>
 							<div>
-								<p>啦啦啦啦杨洋好帅啊~</p>
-								<button type="button" class="btn btn-default btn-sm">关注我+</button>
+								<p id="orglist-recommend-intro2">啦啦啦啦杨洋好帅啊~</p>
+								<button type="button" class="btn btn-default btn-sm" id="orglist-recommend-concerned2">关注我+</button>
 							</div>
 						</div>
 					</div>
 					<div class="interested-org-list">
-						<div class="interested-org-list-image"></div>
+						<div class="interested-org-list-image" id="orglist-recommend-companyimg3"></div>
 						<div class="interested-org-list-content">
-							<a href="#" alt="我们是xxxxxxxxxxxx公司" title="我是xxxxxxxxxxxxxxxxxx公司"><b>我们是xxxxxxxxxxxx公司</b></a><br>
+							<span id="orglist-recommend-company3"><a href="#" alt="我们是xxxxxxxxxxxx公司" title="我是xxxxxxxxxxxxxxxxxx公司" class="link-text-2"><b>我们是xxxxxxxxxxxx公司</b></a></span><br>
 							<div>
-								<p>啦啦啦啦杨洋好帅啊~</p>
-								<button type="button" class="btn btn-default btn-sm" >关注我+</button>
+								<p id="orglist-recommend-intro3">啦啦啦啦杨洋好帅啊~</p>
+								<button type="button" class="btn btn-default btn-sm" id="orglist-recommend-concerned3">关注我+</button>
 							</div>
 						</div>
 					</div>
@@ -96,58 +96,52 @@
 					<div class="concerned-org-list-1">
 						<div class="concerned-org-list-image"></div>
 						<div class="concerned-org-list-content">
-							<a href="#"><b>大家好我们是筷子兄弟</b></a><br>
-							<span class="org-information">&nbsp;&nbsp;驻扎地：北京&nbsp;&nbsp;主要领域：孝敬老人 关爱孩子&nbsp;&nbsp;机构建立时间：1年</span><br>
-							<div><button type="button" class="btn btn-link">取消关注</button></div>
+							<span id="orglist-concerned-company1"><a href="#" class="link-text-2"><b>大家好我们是筷子兄弟</b></a></span><br>
+							<span class="org-information">&nbsp;&nbsp;驻扎地：<span id="orglist-concerned-city1">北京</span>&nbsp;&nbsp;主要领域：<span id="orglist-concerned-domain1">孝敬老人 关爱孩子</span>&nbsp;&nbsp;机构建立时间：<span id="orglist-concerned-setup1">1年</span></span><br>
+							<div><button type="button" class="btn btn-link" id="orglist-concerned-cancel1">取消关注</button></div>
 						</div>
 					</div>
 					<hr>
-					<div class="concerned-org-list-2">
-						<ul>
-							<li><a href="#" alt=""><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-							<li><a href="#" alt=""><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-							<li><a href="#" alt=""><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-							<li><a href="#" alt=""><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-						</ul>
-					</div>
+					<ul class="concerned-org-list-2">
+						<li><span id="orglist-concerned-company1-activity1"><a href="#" alt="" class="link-text-1"><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+						<li><span id="orglist-concerned-company1-activity2"><a href="#" alt="" class="link-text-1"><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+						<li><span id="orglist-concerned-company1-activity3"><a href="#" alt="" class="link-text-1"><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+						<li><span id="orglist-concerned-company1-activity4"><a href="#" alt="" class="link-text-1"><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+					</ul>
 				</div>
 				<div class="concerned-org-list">
 					<div class="concerned-org-list-1">
 						<div class="concerned-org-list-image"></div>
 						<div class="concerned-org-list-content">
-							<a href="#"><b>大家好我们是筷子兄弟</b></a><br>
-							<span class="org-information">&nbsp;&nbsp;驻扎地：北京&nbsp;&nbsp;主要领域：孝敬老人 关爱孩子&nbsp;&nbsp;机构建立时间：1年</span><br>
-							<div><button type="button" class="btn btn-link">取消关注</button></div>
+							<span id="orglist-concerned-company2"><a href="#" class="link-text-2"><b>大家好我们是筷子兄弟</b></a></span><br>
+							<span class="org-information">&nbsp;&nbsp;驻扎地：<span id="orglist-concerned-city2">北京</span>&nbsp;&nbsp;主要领域：<span id="orglist-concerned-domain2">孝敬老人 关爱孩子</span>&nbsp;&nbsp;机构建立时间：<span id="orglist-concerned-setup2">1年</span></span><br>
+							<div><button type="button" class="btn btn-link" id="orglist-concerned-cancel2">取消关注</button></div>
 						</div>
 					</div>
 					<hr>
-					<div class="concerned-org-list-2">
-						<ul>
-							<li><a href="#" alt=""><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-							<li><a href="#" alt=""><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-							<li><a href="#" alt=""><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-							<li><a href="#" alt=""><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-						</ul>
-					</div>
+					<ul class="concerned-org-list-2">
+						<li><span id="orglist-concerned-company2-activity1"><a href="#" alt="" class="link-text-1"><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+						<li><span id="orglist-concerned-company2-activity2"><a href="#" alt="" class="link-text-1"><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+						<li><span id="orglist-concerned-company2-activity3"><a href="#" alt="" class="link-text-1"><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+						<li><span id="orglist-concerned-company2-activity4"><a href="#" alt="" class="link-text-1"><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+					</ul>
 				</div>
 				<div class="concerned-org-list">
 					<div class="concerned-org-list-1">
 						<div class="concerned-org-list-image"></div>
 						<div class="concerned-org-list-content">
-							<a href="#"><b>大家好我们是筷子兄弟</b></a><br>
-							<span class="org-information">&nbsp;&nbsp;驻扎地：北京&nbsp;&nbsp;主要领域：孝敬老人 关爱孩子&nbsp;&nbsp;机构建立时间：1年</span><br>
-							<div><button type="button" class="btn btn-link">取消关注</button></div>
+							<span id="orglist-concerned-company"><a href="#" class="link-text-2"><b>大家好我们是筷子兄弟</b></a></span><br>
+							<span class="org-information">&nbsp;&nbsp;驻扎地：<span id="orglist-concerned-city3">北京</span>&nbsp;&nbsp;主要领域：<span id="orglist-concerned-domain3">孝敬老人 关爱孩子</span>&nbsp;&nbsp;机构建立时间：<span id="orglist-concerned-setup3">1年</span></span><br>
+							<div><button type="button" class="btn btn-link" id="orglist-concerned-cancel3">取消关注</button></div>
 						</div>
 					</div>
 					<hr>
-					<div class="concerned-org-list-2">
-						<ul>
-							<li><a href="#" alt=""><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-							<li><a href="#" alt=""><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-							<li><a href="#" alt=""><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-							<li><a href="#" alt=""><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-						</ul>
-					</div>
+					<ul class="concerned-org-list-2">
+						<li><span id="orglist-concerned-company3-activity1"><a href="#" alt="" class="link-text-1"><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+						<li><span id="orglist-concerned-company3-activity2"><a href="#" alt="" class="link-text-1"><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+						<li><span id="orglist-concerned-company3-activity3"><a href="#" alt="" class="link-text-1"><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+						<li><span id="orglist-concerned-company3-activity4"><a href="#" alt="" class="link-text-1"><span style="float:right;">2015-7-25</span>来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+					</ul>
 				</div>
 			</div>
           </div>

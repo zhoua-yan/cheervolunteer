@@ -7,7 +7,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/qile.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/cheervolunteer.css" rel="stylesheet">
+<link href="css/newCheervolunteer.css" rel="stylesheet">
 
 <title>启乐cheeervolunteer-查看机构</title>
 </head>
@@ -61,12 +61,13 @@
 						<div class="offline-nav-hot">
 							<div><h4><b>地区</b></h4></div><hr>
 							<div class="off-nav-hot-link">
-								<a href="#" alt="">北京</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" alt="">上海</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" alt="">广州</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" alt="">深圳</a><br>
-								<a href="#" alt="">北京</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" alt="">上海</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" alt="">广州</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" alt="">深圳</a><br>
-								<a href="#" alt="">北京</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" alt="">上海</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" alt="">广州</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" alt="">深圳</a><br>
-								<a href="#" alt="">北京</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" alt="">上海</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" alt="">广州</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" alt="">深圳</a><br>
+								<span id="offline-recommend-area1"><a href="#" alt="" class="link-text-1">北京</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="offline-recommend-area2"><a href="#" alt="" class="link-text-1">上海</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="pffline-recommend-area3"><a href="#" alt="" class="link-text-1">广州</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="offline-recommend-area4"><a href="#" alt="" class="link-text-1">深圳</a></span><br>
+								<span id="offline-recommend-area5"><a href="#" alt="" class="link-text-1">北京</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="offline-recommend-area6"><a href="#" alt="" class="link-text-1">上海</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="pffline-recommend-area7"><a href="#" alt="" class="link-text-1">广州</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="offline-recommend-area8"><a href="#" alt="" class="link-text-1">深圳</a></span><br>
+								<span id="offline-recommend-area9"><a href="#" alt="" class="link-text-1">北京</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="offline-recommend-area10"><a href="#" alt="" class="link-text-1">上海</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="pffline-recommend-area11"><a href="#" alt="" class="link-text-1">广州</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="offline-recommend-area12"><a href="#" alt="" class="link-text-1">深圳</a></span><br>
+								<span id="offline-recommend-area13"><a href="#" alt="" class="link-text-1">北京</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="offline-recommend-area14"><a href="#" alt="" class="link-text-1">上海</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="pffline-recommend-area15"><a href="#" alt="" class="link-text-1">广州</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="offline-recommend-area16"><a href="#" alt="" class="link-text-1">深圳</a></span><br>
+								
 							</div><br><br>
-							<select class="off-nav-hot-dropdown">
+							<select class="off-nav-hot-dropdown" id="offline-dropdownarea1">
 								<option value="北京"> 北京市 </option>
 								<option value="天津"> 天津市 </option>
 								<option value="上海"> 上海市 </option>
@@ -76,29 +77,86 @@
 								<option value="香港"> 香港特别行政区 </option>
 								<option value="新疆"> 新疆维吾尔族自治区 </option>
 							</select>
-							<select class="off-nav-hot-dropdown">
+							<select class="off-nav-hot-dropdown" id="offline-dropdownarea2">
 								<option></option>
 							</select>
-							<select class="off-nav-hot-dropdown">
+							<select class="off-nav-hot-dropdown" id="offline-dropdownarea3">
 								<option></option>
-							</select>这里我研究下吼<br>
-							<button type="button" class="btn btn-primary" style="position:relative;left:130px;">搜索</button>
+							</select>
+							<div class="off-nav-hot-button">
+								<button type="button" id="offline-searcharea">搜索</button>
+							</div>
 						</div>
 						<div class="offline-nav-hot">
-							<div><h4><b>最新推荐</b></h4></div><hr>
+							<div><h4><b>为你推荐</b></h4></div><hr>
 							<div class="off-nav-hot-list">
 								<ul>
-									<li><a href="#" alt="">来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-									<li><a href="#" alt="">来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-									<li><a href="#" alt="">来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-									<li><a href="#" alt="">来来来今天让我们来做个活动吧吧吧吧吧</a></li>
-									<li><a href="#" alt="">来来来今天让我们来做个活动吧吧吧吧吧</a></li>
+									<li><span id="offline-recommend1"><a href="#" alt="" class="link-text-1">来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+									<li><span id="offline-recommend2"><a href="#" alt="" class="link-text-1">来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+									<li><span id="offline-recommend3"><a href="#" alt="" class="link-text-1">来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+									<li><span id="offline-recommend4"><a href="#" alt="" class="link-text-1">来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
+									<li><span id="offline-recommend5"><a href="#" alt="" class="link-text-1">来来来今天让我们来做个活动吧吧吧吧吧</a></span></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					
 					<div id="offline-main">
+						<div class="offline-main-list">
+							<div><h3><b>最新线下志愿活动</b></h3></div>
+							<ul class="off-main-list">
+								<li><span id="offline-activity1"><a href="#" alt="" class="link-text-1">蓝蓝的天上白云飘~ </a></span><span style="float:right;">2015-08-30</span></li><hr>
+								<li><span id="offline-activity2"><a href="#" alt="" class="link-text-1">蓝蓝的天上白云飘~ </a></span><span style="float:right;">2015-08-30</span></li><hr>
+								<li><span id="offline-activity3"><a href="#" alt="" class="link-text-1">蓝蓝的天上白云飘~ </a></span><span style="float:right;">2015-08-30</span></li><hr>
+								<li><span id="offline-activity4"><a href="#" alt="" class="link-text-1">蓝蓝的天上白云飘~ </a></span><span style="float:right;">2015-08-30</span></li><hr>
+								<li><span id="offline-activity5"><a href="#" alt="" class="link-text-1">蓝蓝的天上白云飘~ </a></span><span style="float:right;">2015-08-30</span></li><hr>
+								<li><span id="offline-activity6"><a href="#" alt="" class="link-text-1">蓝蓝的天上白云飘~ </a></span><span style="float:right;">2015-08-30</span></li><hr>
+								<li><span id="offline-activity7"><a href="#" alt="" class="link-text-1">蓝蓝的天上白云飘~ </a></span><span style="float:right;">2015-08-30</span></li><hr>
+								<li><span id="offline-activity8"><a href="#" alt="" class="link-text-1">蓝蓝的天上白云飘~ </a></span><span style="float:right;">2015-08-30</span></li><hr>
+								<li><span id="offline-activity9"><a href="#" alt="" class="link-text-1">蓝蓝的天上白云飘~ </a></span><span style="float:right;">2015-08-30</span></li><hr>
+								<li><span id="offline-activity10"><a href="#" alt="" class="link-text-1">蓝蓝的天上白云飘~ </a></span><span style="float:right;">2015-08-30</span></li>
+							</ul>
+							<div class="off-main-page">
+								<button type="button" id="offline-activity-up"><span class="glyphicon glyphicon-chevron-left">上一页</span></button>&nbsp;&nbsp;&nbsp;&nbsp;
+								<button type="button" id="offline-activity-down">下一页<span class="glyphicon glyphicon-chevron-right"></span></button>	
+							</div>
+						</div>
+						<div class="offline-main-list">
+							<div><h3><b>线下志愿活动热门评价</b></h3><span style="float:right;"></div>
+							<div class="off-main-list-com">
+								<div class="off-main-list-com-title">
+									<span class="glyphicon glyphicon-user" style="font-size:16px;"><span id="offline-comment-user1"><a href="#" alt="" class="link-text-3">周艳萍</a></span>&nbsp;</span>
+									<span style="color:rgb(238,93,106);">评价&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									<span class="glyphicon glyphicon-home" style="font-size:24px;"><span id="offline-comment-company1"><a href="#" alt="" class="link-text-3"><b>万事屋</b></a></span></span>
+								</div>
+								<p id="offline-comment1">
+									“这个吧。。。我觉得吧。。。紫拉很帅！”
+								</p>
+								<span style="float:right;"><a href="#" alt="" class="link-text-2">查看更多</a></span>
+							</div>
+							<div class="off-main-list-com">
+								<div class="off-main-list-com-title">
+									<span class="glyphicon glyphicon-user" style="font-size:16px;"><span id="offline-comment-user2"><a href="#" alt="" class="link-text-3">周艳萍</a></span>&nbsp;</span>
+									<span style="color:rgb(238,93,106);">评价&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									<span class="glyphicon glyphicon-home" style="font-size:24px;"><span id="offline-comment-company2"><a href="#" alt="" class="link-text-3"><b>万事屋</b></a></span></span>
+								</div>
+								<p id="offline-comment2">
+									“这个吧。。。我觉得吧。。。紫拉很帅！”
+								</p>
+								<span style="float:right;"><a href="#" alt="" class="link-text-2">查看更多</a></span>
+							</div>
+							<div class="off-main-list-com">
+								<div class="off-main-list-com-title">
+									<span class="glyphicon glyphicon-user" style="font-size:16px;"><span id="offline-comment-user3"><a href="#" alt="" class="link-text-3">周艳萍</a></span>&nbsp;</span>
+									<span style="color:rgb(238,93,106);">评价&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									<span class="glyphicon glyphicon-home" style="font-size:24px;"><span id="offline-comment-company3"><a href="#" alt="" class="link-text-3"><b>万事屋</b></a></span></span>
+								</div>
+								<p id="offline-comment3">
+									“这个吧。。。我觉得吧。。。紫拉很帅！”
+								</p>
+								<span style="float:right;"><a href="#" alt="" class="link-text-2">查看更多</a></span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

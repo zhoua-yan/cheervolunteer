@@ -7,7 +7,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/qile.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/cheervolunteer.css" rel="stylesheet">
+<link href="css/newCheervolunteer.css" rel="stylesheet">
 
 <title>启乐cheeervolunteer-查看机构</title>
 </head>
@@ -18,7 +18,7 @@
       <li><a href="home.html">Cheervolunteer</a></li>
       <li><a href="home.html">首页</a></li>
       <li><a href="myfile.html" data-toggle="tab">我的档案</a></li>
-      <li class="dropdown active" id="item"><a href="#" class="dropdown-toggle" data-toggle="dropdown">志愿活动 <b class="caret"></b></a>
+      <li class="dropdown active" id="item"><a href="activityList.html" class="dropdown-toggle" data-toggle="dropdown">志愿活动 <b class="caret"></b></a>
             <ul class="dropdown-menu">
                <li><a href="online.html" data-toggle="tab">找线上</a></li>
                <li><a href="offline.html" data-toggle="tab">找线下</a></li>
@@ -57,6 +57,222 @@
 			</div>
 			<div class="tab-content">
 				<div id="page" class="contextDiv tab-pane active">
+					<div class="feedback-list" style="padding:20px;">
+						<div><h3><b>我要评价</b></h3></div>
+						<form class="feedback-personal">
+							<div class="form-group feedper">
+								<label class="feedleft">机构名称</label>
+								<div class="feedright"><input type="text" class="form-control" id="feedback-company" placeholder="请输入名字" style="width:600px;"></div>
+							</div>
+							<div class="form-group feedper">
+								<label class="feedleft">活动名称</label>
+								<div class="feedright">
+									<select class="form-control" id="feedback-activity" style="width:500px;">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group feedper">
+								<label class="feedleft">活动类型</label>
+								<div class="feedright" style="font-size:15px;">
+									<input type="radio" name="feedback-type" id="feedback-type-online" value="online" checked> 线上志愿活动&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="radio" name="feedback-type" id="feedback-type-offline" value="offline" checked> 线下志愿活动&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="radio" name="feedback-type" id="feedback-type-longterm" value="longterm" checked> 长期志愿活动 
+								</div>
+							</div>
+							<div class="form-group feedper">
+								<label class="feedleft">地区</label>
+								<div class="feedright">
+									<select class="form-control" id="feedback-area" style="width:200px;">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group feedper">
+								<label class="feedleft">时间</label>
+								<div class="feedright">
+									<select class="form-control" id="feedback-time" style="width:300px;">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group feedper" style="height:100px;">
+								<label class="feedleft">评价</label>
+								<div class="feedright"><textarea class="form-control" rows="5" id="feedback-comment" style="width:1000px;"></textarea></div>
+							</div>
+							<div class="feedper" style="text-align:right;">
+								<button type="submit" class="btn btn-default" id="feedback-submit">发表评论</button>
+							</div>
+						</form>
+					</div>
+					
+					<div class="feedback-list" id="feedback-online">
+						<div class="context-title" style="width:auto;"><span class="glyphicon glyphicon-upload"></span>线上项目评价</div>
+						<div class="feedback-sublist">
+							<div class="feed-sub-img">
+								<span class="glyphicon glyphicon-globe" style="font-size:100px;" id="feedback-online-activityimg1"></span>
+								<a href="#" alt="" class="link-text-2">查看详细</a>
+							</div>
+							<div class="feed-sub-text">
+								<h4><b><span id="feedback-online-commenttitle1"><a href="" alt="" class="link-text-2">哎呀妈呀这个活动啧啧啧怎么说呢~</a></span></b></h4>
+								<p>
+									评论者：<span id="feedback-online-user1"><a href="#" alt="" class="link-text-4">周艳萍</a></span><br>
+									评论机构：<span id="feedback-online-company1"><a href="#" alt="" class="link-text-4">快乐大本营</a></span><br>
+									评分：<span id="feedback-online-score1">5.5分</span><br>
+									简介：<span id="feedback-online-intro1">巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</span>
+								</p>
+							</div>
+						</div>
+						<div class="feedback-sublist">
+							<div class="feed-sub-img">
+								<span class="glyphicon glyphicon-globe" style="font-size:100px;" id="feedback-online-activityimg2"></span>
+								<a href="#" alt="" class="link-text-2">查看详细</a>
+							</div>
+							<div class="feed-sub-text">
+								<h4><b><span id="feedback-online-commenttitle2"><a href="" alt="" class="link-text-2">哎呀妈呀这个活动啧啧啧怎么说呢~</a></span></b></h4>
+								<p>
+									评论者：<span id="feedback-online-user2"><a href="#" alt="" class="link-text-4">周艳萍</a></span><br>
+									评论机构：<span id="feedback-online-company2"><a href="#" alt="" class="link-text-4">快乐大本营</a></span><br>
+									评分：<span id="feedback-online-score2">5.5分</span><br>
+									简介：<span id="feedback-online-intro2">巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</span>
+								</p>
+							</div>
+						</div>
+						<div class="feedback-sublist">
+							<div class="feed-sub-img">
+								<span class="glyphicon glyphicon-globe" style="font-size:100px;" id="feedback-online-activityimg3"></span>
+								<a href="#" alt="" class="link-text-2">查看详细</a>
+							</div>
+							<div class="feed-sub-text">
+								<h4><b><span id="feedback-online-commenttitle3"><a href="" alt="" class="link-text-2">哎呀妈呀这个活动啧啧啧怎么说呢~</a></span></b></h4>
+								<p>
+									评论者：<span id="feedback-online-user3"><a href="#" alt="" class="link-text-4">周艳萍</a></span><br>
+									评论机构：<span id="feedback-online-company3"><a href="#" alt="" class="link-text-4">快乐大本营</a></span><br>
+									评分：<span id="feedback-online-score3">5.5分</span><br>
+									简介：<span id="feedback-online-intro3">巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</span>
+								</p>
+							</div>
+						</div>
+						<div style="height:30px;width:100%;text-align:right;">
+							<span><a href="#" class="link-text-2">查看更多评论</a></span>
+						</div>
+					</div>
+					
+					<div class="feedback-list" id="feedback-offline">
+						<div class="context-title" style="width:auto;"><span class="glyphicon glyphicon-download"></span>线下项目评价</div>
+						<div class="feedback-sublist">
+							<div class="feed-sub-img">
+								<span class="glyphicon glyphicon-globe" style="font-size:100px;" id="feedback-offline-activityimg1"></span>
+								<a href="#" alt="" class="link-text-2">查看详细</a>
+							</div>
+							<div class="feed-sub-text">
+								<h4><b><span id="feedback-offline-commenttitle1"><a href="" alt="" class="link-text-2">哎呀妈呀这个活动啧啧啧怎么说呢~</a></span></b></h4>
+								<p>
+									评论者：<span id="feedback-offline-user1"><a href="#" alt="" class="link-text-4">周艳萍</a></span><br>
+									评论机构：<span id="feedback-offline-company1"><a href="#" alt="" class="link-text-4">快乐大本营</a></span><br>
+									评分：<span id="feedback-offline-score1">5.5分</span><br>
+									简介：<span id="feedback-offline-intro1">巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</span>
+								</p>
+							</div>
+						</div>
+						<div class="feedback-sublist">
+							<div class="feed-sub-img">
+								<span class="glyphicon glyphicon-globe" style="font-size:100px;" id="feedback-offline-activityimg2"></span>
+								<a href="#" alt="" class="link-text-2">查看详细</a>
+							</div>
+							<div class="feed-sub-text">
+								<h4><b><span id="feedback-offline-commenttitle2"><a href="" alt="" class="link-text-2">哎呀妈呀这个活动啧啧啧怎么说呢~</a></span></b></h4>
+								<p>
+									评论者：<span id="feedback-offline-user2"><a href="#" alt="" class="link-text-4">周艳萍</a></span><br>
+									评论机构：<span id="feedback-offline-company2"><a href="#" alt="" class="link-text-4">快乐大本营</a></span><br>
+									评分：<span id="feedback-offline-score2">5.5分</span><br>
+									简介：<span id="feedback-offline-intro2">巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</span>
+								</p>
+							</div>
+						</div>
+						<div class="feedback-sublist">
+							<div class="feed-sub-img">
+								<span class="glyphicon glyphicon-globe" style="font-size:100px;" id="feedback-offline-activityimg3"></span>
+								<a href="#" alt="" class="link-text-2">查看详细</a>
+							</div>
+							<div class="feed-sub-text">
+								<h4><b><span id="feedback-offline-commenttitle3"><a href="" alt="" class="link-text-2">哎呀妈呀这个活动啧啧啧怎么说呢~</a></span></b></h4>
+								<p>
+									评论者：<span id="feedback-offline-user3"><a href="#" alt="" class="link-text-4">周艳萍</a></span><br>
+									评论机构：<span id="feedback-offline-company3"><a href="#" alt="" class="link-text-4">快乐大本营</a></span><br>
+									评分：<span id="feedback-offline-score3">5.5分</span><br>
+									简介：<span id="feedback-offline-intro3">巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</span>
+								</p>
+							</div>
+						</div>
+						<div style="height:30px;width:100%;text-align:right;">
+							<span><a href="#" class="link-text-2">查看更多评论</a></span>
+						</div>
+					</div>
+					
+					<div class="feedback-list" id="feedback-longterm">
+						<div class="context-title" style="width:auto;"><span class="glyphicon glyphicon-tasks"></span>长期项目评价</div>
+						<div class="feedback-sublist">
+							<div class="feed-sub-img">
+								<span class="glyphicon glyphicon-globe" style="font-size:100px;" id="feedback-longterm-activityimg1"></span>
+								<a href="#" alt="" class="link-text-2">查看详细</a>
+							</div>
+							<div class="feed-sub-text">
+								<h4><b><span id="feedback-longterm-commenttitle1"><a href="" alt="" class="link-text-2">哎呀妈呀这个活动啧啧啧怎么说呢~</a></span></b></h4>
+								<p>
+									评论者：<span id="feedback-longterm-user1"><a href="#" alt="" class="link-text-4">周艳萍</a></span><br>
+									评论机构：<span id="feedback-longterm-company1"><a href="#" alt="" class="link-text-4">快乐大本营</a></span><br>
+									评分：<span id="feedback-longterm-score1">5.5分</span><br>
+									简介：<span id="feedback-longterm-intro1">巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</span>
+								</p>
+							</div>
+						</div>
+						<div class="feedback-sublist">
+							<div class="feed-sub-img">
+								<span class="glyphicon glyphicon-globe" style="font-size:100px;" id="feedback-longterm-activityimg2"></span>
+								<a href="#" alt="" class="link-text-2">查看详细</a>
+							</div>
+							<div class="feed-sub-text">
+								<h4><b><span id="feedback-longterm-commenttitle2"><a href="" alt="" class="link-text-2">哎呀妈呀这个活动啧啧啧怎么说呢~</a></span></b></h4>
+								<p>
+									评论者：<span id="feedback-longterm-user2"><a href="#" alt="" class="link-text-4">周艳萍</a></span><br>
+									评论机构：<span id="feedback-longterm-company2"><a href="#" alt="" class="link-text-4">快乐大本营</a></span><br>
+									评分：<span id="feedback-longterm-score2">5.5分</span><br>
+									简介：<span id="feedback-longterm-intro2">巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</span>
+								</p>
+							</div>
+						</div>
+						<div class="feedback-sublist">
+							<div class="feed-sub-img">
+								<span class="glyphicon glyphicon-globe" style="font-size:100px;" id="feedback-longterm-activityimg3"></span>
+								<a href="#" alt="" class="link-text-2">查看详细</a>
+							</div>
+							<div class="feed-sub-text">
+								<h4><b><span id="feedback-longterm-commenttitle3"><a href="" alt="" class="link-text-2">哎呀妈呀这个活动啧啧啧怎么说呢~</a></span></b></h4>
+								<p>
+									评论者：<span id="feedback-longterm-user3"><a href="#" alt="" class="link-text-4">周艳萍</a></span><br>
+									评论机构：<span id="feedback-longterm-company3"><a href="#" alt="" class="link-text-4">快乐大本营</a></span><br>
+									评分：<span id="feedback-longterm-score3">5.5分</span><br>
+									简介：<span id="feedback-longterm-intro3">巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</span>
+								</p>
+							</div>
+						</div>
+						<div style="height:30px;width:100%;text-align:right;">
+							<span><a href="#" class="link-text-2">查看更多评论</a></span>
+						</div>
+					</div>
 					
 				</div>
 			</div>

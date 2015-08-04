@@ -7,7 +7,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/qile.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/cheervolunteer.css" rel="stylesheet">
+<link href="css/newCheervolunteer.css" rel="stylesheet">
 
 <title>启乐cheeervolunteer-查看机构</title>
 </head>
@@ -56,24 +56,24 @@
 				<div id="page-4-2" class="contextDiv tab-pane active">
 					<div class="screening">
 						<div class="screening-1">
-							<span><b>按志愿机构所在地</b></span>
+							<span><h4><b>按志愿机构所在地</b></h4></span>
 							<div>
 								<ul>
-									<li><a href="#" alt="">北京</a></li>
-									<li><a href="#" alt="">上海</a></li>
-									<li><a href="#" alt="">广州</a></li>
-									<li><a href="#" alt="">深圳</a></li>
+									<li><span id="orgsearch-city1"><a href="#" alt="" class="link-text-2">北京</a></span></li>
+									<li><span id="orgsearch-city2"><a href="#" alt="" class="link-text-2">上海</a></span></li>
+									<li><span id="orgsearch-city3"><a href="#" alt="" class="link-text-2">广州</a></span></li>
+									<li><span id="orgsearch-city4"><a href="#" alt="" class="link-text-2">深圳</a></span></li>
 								</ul>
 							</div>
 						</div>
 						<div class="screening-1">
-							<span><b>按志愿活动类型</b></span>
+							<span><h4><b>按志愿活动类型</b></h4></span>
 							<div>
 								<ul>
-									<li><a href="#" alt="">演唱会</a></li>
-									<li><a href="#" alt="">会议</a></li>
-									<li><a href="#" alt="">敬老院</a></li>
-									<li><a href="#" alt="">福利院</a></li>
+									<li><span id="orgsearch-type1"><a href="#" alt="" class="link-text-2">演唱会</a></span></li>
+									<li><span id="orgsearch-type2"><a href="#" alt="" class="link-text-2">会议</a></span></li>
+									<li><span id="orgsearch-type3"><a href="#" alt="" class="link-text-2">敬老院</a></span></li>
+									<li><span id="orgsearch-type4"><a href="#" alt="" class="link-text-2">福利院</a></span></li>
 								</ul>
 							</div>
 						</div>
@@ -81,53 +81,78 @@
 					<div class="search-block">
 						<div class="search-bar-block">
 							<div class="input-group">
-								<input type="text" class="form-control" placeholder="请输入要搜索的志愿机构或志愿活动">
-								<span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+								<input type="text" class="form-control" placeholder="请输入要搜索的志愿机构或志愿活动" id="orgsearch-search-text">
+								<button class="input-group-addon" id="orgsearch-search"><span class="glyphicon glyphicon-search"></span></button>
 							</div>
 						</div>
 						<div class="org-search">
 							<div class="org-search-list">
-								<div><img class="org-search-list-image" src="./image/organization.png"></img></div>
+								<div><img class="org-search-list-image" src="./image/organization.png" id="orgsearch-companyimg1"></img></div>
 								<div class="org-search-list-content">
-									<a href="#"><b>万事屋</b></a>
+									<span id="orgsearch-company1"><a href="#" class="link-text-2"><b>万事屋</b></a></span>
 									<div>
-										<p><b>地址</b>：北京市昌平区中央财经大学<br><b>标签</b>；正义&nbsp;&nbsp;热血<br><b>机构简介</b>：这是一个严肃的机构！<span style="float:right;"><a href="#">查看更多</a></span></p>
+										<p>
+											<b>地址</b>：<span id="orgsearch-address1">北京市昌平区中央财经大学</span><br>
+											<b>标签</b>；<span id="orgsearch-company1-tag1">正义</span>&nbsp;&nbsp;<span id="orgsearch-company1-tag2">热血</span><br>
+											<b>机构简介</b>：<span id="orgsearch-intro1">这是一个严肃的机构！</span>
+											<span style="float:right;"><a href="#" class="link-text-2">查看更多</a></span>
+										</p>
 									</div>
 								</div>
 							</div>
 							<div class="org-search-list">
-								<div><img class="org-search-list-image" src="./image/organization.png"></img></div>
+								<div><img class="org-search-list-image" src="./image/organization.png" id="orgsearch-companyimg2"></img></div>
 								<div class="org-search-list-content">
-									<a href="#"><b>万事屋</b></a>
+									<span id="orgsearch-company2"><a href="#" class="link-text-2"><b>万事屋</b></a></span>
 									<div>
-										<p><b>地址</b>：北京市昌平区中央财经大学<br><b>标签</b>；正义&nbsp;&nbsp;热血<br><b>机构简介</b>：这是一个严肃的机构！<span style="float:right;"><a href="#">查看更多</a></span></p>
+										<p>
+											<b>地址</b>：<span id="orgsearch-address2">北京市昌平区中央财经大学</span><br>
+											<b>标签</b>；<span id="orgsearch-company2-tag1">正义</span>&nbsp;&nbsp;<span id="orgsearch-company2-tag2">热血</span><br>
+											<b>机构简介</b>：<span id="orgsearch-intro2">这是一个严肃的机构！</span>
+											<span style="float:right;"><a href="#" class="link-text-2">查看更多</a></span>
+										</p>
 									</div>
 								</div>
 							</div>
 							<div class="org-search-list">
-								<div><img class="org-search-list-image" src="./image/organization.png"></img></div>
+								<div><img class="org-search-list-image" src="./image/organization.png" id="orgsearch-companyimg3"></img></div>
 								<div class="org-search-list-content">
-									<a href="#"><b>万事屋</b></a>
+									<span id="orgsearch-company3"><a href="#" class="link-text-2"><b>万事屋</b></a></span>
 									<div>
-										<p><b>地址</b>：北京市昌平区中央财经大学<br><b>标签</b>；正义&nbsp;&nbsp;热血<br><b>机构简介</b>：这是一个严肃的机构！<span style="float:right;"><a href="#">查看更多</a></span></p>
+										<p>
+											<b>地址</b>：<span id="orgsearch-address3">北京市昌平区中央财经大学</span><br>
+											<b>标签</b>；<span id="orgsearch-company3-tag1">正义</span>&nbsp;&nbsp;<span id="orgsearch-company3-tag2">热血</span><br>
+											<b>机构简介</b>：<span id="orgsearch-intro3">这是一个严肃的机构！</span>
+											<span style="float:right;"><a href="#" class="link-text-2">查看更多</a></span>
+										</p>
 									</div>
 								</div>
 							</div>
 							<div class="org-search-list">
-								<div><img class="org-search-list-image" src="./image/organization.png"></img></div>
+								<div><img class="org-search-list-image" src="./image/organization.png" id="orgsearch-companyimg4"></img></div>
 								<div class="org-search-list-content">
-									<a href="#"><b>万事屋</b></a>
+									<span id="orgsearch-company4"><a href="#" class="link-text-2"><b>万事屋</b></a></span>
 									<div>
-										<p><b>地址</b>：北京市昌平区中央财经大学<br><b>标签</b>；正义&nbsp;&nbsp;热血<br><b>机构简介</b>：这是一个严肃的机构！<span style="float:right;"><a href="#">查看更多</a></span></p>
+										<p>
+											<b>地址</b>：<span id="orgsearch-address4">北京市昌平区中央财经大学</span><br>
+											<b>标签</b>；<span id="orgsearch-company4-tag1">正义</span>&nbsp;&nbsp;<span id="orgsearch-company4-tag2">热血</span><br>
+											<b>机构简介</b>：<span id="orgsearch-intro4">这是一个严肃的机构！</span>
+											<span style="float:right;"><a href="#" class="link-text-2">查看更多</a></span>
+										</p>
 									</div>
 								</div>
 							</div>
 							<div class="org-search-list">
-								<div><img class="org-search-list-image" src="./image/organization.png"></img></div>
+								<div><img class="org-search-list-image" src="./image/organization.png" id="orgsearch-companyimg5"></img></div>
 								<div class="org-search-list-content">
-									<a href="#"><b>万事屋</b></a>
+									<span id="orgsearch-company5"><a href="#" class="link-text-2"><b>万事屋</b></a></span>
 									<div>
-										<p><b>地址</b>：北京市昌平区中央财经大学<br><b>标签</b>；正义&nbsp;&nbsp;热血<br><b>机构简介</b>：这是一个严肃的机构！<span style="float:right;"><a href="#">查看更多</a></span></p>
+										<p>
+											<b>地址</b>：<span id="orgsearch-address5">北京市昌平区中央财经大学</span><br>
+											<b>标签</b>；<span id="orgsearch-company5-tag1">正义</span>&nbsp;&nbsp;<span id="orgsearch-company5-tag2">热血</span><br>
+											<b>机构简介</b>：<span id="orgsearch-intro5">这是一个严肃的机构！</span>
+											<span style="float:right;"><a href="#" class="link-text-2">查看更多</a></span>
+										</p>
 									</div>
 								</div>
 							</div>

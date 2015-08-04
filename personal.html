@@ -7,7 +7,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/qile.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/cheervolunteer.css" rel="stylesheet">
+<link href="css/newCheervolunteer.css" rel="stylesheet">
 
 <title>启乐cheeervolunteer-查看机构</title>
 </head>
@@ -18,7 +18,7 @@
       <li><a href="home.html">Cheervolunteer</a></li>
       <li><a href="home.html">首页</a></li>
       <li><a href="myfile.html" data-toggle="tab">我的档案</a></li>
-      <li class="dropdown active" id="item"><a href="#" class="dropdown-toggle" data-toggle="dropdown">志愿活动 <b class="caret"></b></a>
+      <li class="dropdown active" id="item"><a href="activityList.html" class="dropdown-toggle" data-toggle="dropdown">志愿活动 <b class="caret"></b></a>
             <ul class="dropdown-menu">
                <li><a href="online.html" data-toggle="tab">找线上</a></li>
                <li><a href="offline.html" data-toggle="tab">找线下</a></li>
@@ -49,15 +49,200 @@
 			 <div id="navbar">
 				<ul id="buttonDiv" class="nav nav-tabs" style="width:500px;">
 					<li style="width:100px;"><a href="online.html" data-toggle="tab"><span class="glyphicon glyphicon-upload" title="找线上"></span></a></li>
-					<li style="width:100px;"><a href="offlilne.html"><span class="glyphicon glyphicon-download" title="找线下"></span></a></li>
-					<li style="width:100px;"><a href="personal.html"><span class="glyphicon glyphicon-tasks" title="长期项目"></span></a></li>
+					<li style="width:100px;"><a href="offline.html"><span class="glyphicon glyphicon-download" title="找线下"></span></a></li>
+					<li style="width:100px;"><a href="longterm.html"><span class="glyphicon glyphicon-tasks" title="长期项目"></span></a></li>
 					<li class="active" style="width:100px;"><a href="#"><span class="glyphicon glyphicon-user" title="我的个人资料"></span></a></li>
 					<li style="width:100px;"><a href="feedback.html"><span class="glyphicon glyphicon-share" title="项目申请反馈"></span></a></li>
 				</ul>
 			</div>
 			<div class="tab-content">
 				<div id="page" class="contextDiv tab-pane active">
-					
+					<div class="info effect">
+						<div class="usrImage"></div>
+						<div class="text"><h2>李倩<img src="image/female.png" alt="女" title="female"><a href="#">编辑</a></h2><hr>
+							<p class="city" id="city"><label>所在地：</label>北京-昌平</p>
+							<p class="keyword" id="keyword"><label>个人标签：</label>环保大使、技术、热情</p>
+							<p class="school" id="school"><label>学校：</label>中央财经大学-信息学院-大二</p>  
+							<p class="descri" id="descri">热衷于各种环保类志愿活动！</p>
+							<p><label>邮箱：</label>liqian@163.com</p>
+						</div>
+					</div>
+					<div class="per-application">
+						<div class="context-title" style="width:auto;"><span class="glyphicon glyphicon-list"></span>申请中项目</div>
+						<div class="per-app-list">
+							<div class="per-app-list-title">
+								<h4><b><a href="#" alt="" class="link-text-2" style="float:left;" id="per-app-activity1">登陆空岛</a></b></h4>
+								<a href="#" alt="" class="link-text-2" style="float:right;">查看详细</a>
+							</div>
+							<p class="per-app-list-text">
+								申请时间：<span id="per-app-time1">2015-07-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								申请状态：<span id="per-app-state1">申请中</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								机构名称：<a href="#" alt="" class="link-text-4" id="per-app-company1">万事屋</a><br>
+								活动简介：<span id="per-app-intro1">巴拉巴拉巴拉巴拉巴拉巴拉</span>
+							</p>
+						</div>
+						<hr>
+						<div class="per-app-list">
+							<div class="per-app-list-title">
+								<h4><b><a href="#" alt="" class="link-text-2" style="float:left;" id="per-app-activity2">登陆空岛</a></b></h4>
+								<a href="#" alt="" class="link-text-2" style="float:right;">查看详细</a>
+							</div>
+							<p class="per-app-list-text">
+								申请时间：<span id="per-app-time2">2015-07-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								申请状态：<span id="per-app-state2">申请中</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								机构名称：<a href="#" alt="" class="link-text-4" id="per-app-company2">万事屋</a><br>
+								活动简介：<span id="per-app-intro2">巴拉巴拉巴拉巴拉巴拉巴拉</span>
+							</p>
+						</div>
+						<hr>
+						<div class="per-app-list">
+							<div class="per-app-list-title">
+								<h4><b><a href="#" alt="" class="link-text-2" style="float:left;" id="per-app-activity3">登陆空岛</a></b></h4>
+								<a href="#" alt="" class="link-text-2" style="float:right;">查看详细</a>
+							</div>
+							<p class="per-app-list-text">
+								申请时间：<span id="per-app-time3">2015-07-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								申请状态：<span id="per-app-state3">申请中</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								机构名称：<a href="#" alt="" class="link-text-4" id="per-app-company3">万事屋</a><br>
+								活动简介：<span id="per-app-intro3">巴拉巴拉巴拉巴拉巴拉巴拉</span>
+							</p>
+						</div>
+						<div class="per-app-page">
+							<button type="button" id="per-app-up"><span class="glyphicon glyphicon-chevron-left">上一页</span></button>&nbsp;&nbsp;&nbsp;&nbsp;
+							<button type="button" id="per-app-down">下一页<span class="glyphicon glyphicon-chevron-right"></span></button>	
+						</div>
+					</div>
+					<div class="per-finish">
+						<div class="context-title" style="width:auto;"><span class="glyphicon glyphicon-check"></span>已完成项目</div>
+						<div class="per-fin-list">
+							<div class="per-fin-list-title">
+								<h4><b><a href="#" alt="" class="link-text-2" style="float:left;" id="per-fin-activity1">登陆空岛</a></b></h4>
+								<a href="#" alt="" class="link-text-2" style="float:right;">查看详细</a>
+							</div>
+							<p class="per-fin-list-text">
+								申请时间：<span id="per-fin-apply1">2015-07-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								完成时间：<span id="per-fin-finish1">2015-08-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								机构名称：<a href="#" alt="" class="link-text-4" id="per-fin-company1">万事屋</a><br>
+								活动简介：<span id="per-fin-intro1">巴拉巴拉巴拉巴拉巴拉巴拉</span>
+							</p>
+						</div>
+						<hr>
+						<div class="per-fin-list">
+							<div class="per-fin-list-title">
+								<h4><b><a href="#" alt="" class="link-text-2" style="float:left;" id="per-fin-activity2">登陆空岛</a></b></h4>
+								<a href="#" alt="" class="link-text-2" style="float:right;">查看详细</a>
+							</div>
+							<p class="per-fin-list-text">
+								申请时间：<span id="per-fin-apply2">2015-07-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								完成时间：<span id="per-fin-finish2">2015-08-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								机构名称：<a href="#" alt="" class="link-text-4" id="per-fin-company2">万事屋</a><br>
+								活动简介：<span id="per-fin-intro2">巴拉巴拉巴拉巴拉巴拉巴拉</span>
+							</p>
+						</div>
+						<hr>
+						<div class="per-fin-list">
+							<div class="per-fin-list-title">
+								<h4><b><a href="#" alt="" class="link-text-2" style="float:left;" id="per-fin-activity3">登陆空岛</a></b></h4>
+								<a href="#" alt="" class="link-text-2" style="float:right;">查看详细</a>
+							</div>
+							<p class="per-fin-list-text">
+								申请时间：<span id="per-fin-apply3">2015-07-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								完成时间：<span id="per-fin-finish3">2015-08-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								机构名称：<a href="#" alt="" class="link-text-4" id="per-fin-company3">万事屋</a><br>
+								活动简介：<span id="per-fin-intro3">巴拉巴拉巴拉巴拉巴拉巴拉</span>
+							</p>
+						</div>
+						<div class="per-fin-page">
+							<button type="button" id="per-fin-up"><span class="glyphicon glyphicon-chevron-left">上一页</span></button>&nbsp;&nbsp;&nbsp;&nbsp;
+							<button type="button" id="per-fin-down"">下一页<span class="glyphicon glyphicon-chevron-right"></span></button>	
+						</div>
+					</div>
+					<div class="per-collection">
+						<div class="context-title" style="width:auto;"><span class="glyphicon glyphicon-user"></span>收藏项目</div>
+						<div class="per-col-list">
+							<div class="per-col-list-title">
+								<h4><b><a href="#" alt="" class="link-text-2" style="float:left;" id="per-col-activity1">登陆空岛</a></b></h4>
+								<a href="#" alt="" class="link-text-2" style="float:right;">查看详细</a>
+							</div>
+							<p class="per-col-list-text">
+								开始时间：<span class="per-col-start1">2015-07-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								完成时间：<span class="per-col-finish1">2015-08-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								机构名称：<a href="#" alt="" class="link-text-4" id="per-col-company1">万事屋</a><br>
+								活动简介：<span id="per-col-intro1">巴拉巴拉巴拉巴拉巴拉巴拉</span>
+							</p>
+						</div>
+						<hr>
+						<div class="per-col-list">
+							<div class="per-col-list-title">
+								<h4><b><a href="#" alt="" class="link-text-2" style="float:left;" id="per-col-activity2">登陆空岛</a></b></h4>
+								<a href="#" alt="" class="link-text-2" style="float:right;">查看详细</a>
+							</div>
+							<p class="per-col-list-text">
+								开始时间：<span class="per-col-start2">2015-07-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								完成时间：<span class="per-col-finish2">2015-08-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								机构名称：<a href="#" alt="" class="link-text-4" id="per-col-company2">万事屋</a><br>
+								活动简介：<span id="per-col-intro2">巴拉巴拉巴拉巴拉巴拉巴拉</span>
+							</p>
+						</div>
+						<hr>
+						<div class="per-col-list">
+							<div class="per-col-list-title">
+								<h4><b><a href="#" alt="" class="link-text-2" style="float:left;" id="per-col-activity3">登陆空岛</a></b></h4>
+								<a href="#" alt="" class="link-text-2" style="float:right;">查看详细</a>
+							</div>
+							<p class="per-col-list-text">
+								开始时间：<span class="per-col-start3">2015-07-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								完成时间：<span class="per-col-finish3">2015-08-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								机构名称：<a href="#" alt="" class="link-text-4" id="per-col-company3">万事屋</a><br>
+								活动简介：<span id="per-col-intro3">巴拉巴拉巴拉巴拉巴拉巴拉</span>
+							</p>
+						</div>
+						<div class="per-col-page">
+							<button type="button" id="per-col-up"><span class="glyphicon glyphicon-chevron-left">上一页</span></button>&nbsp;&nbsp;&nbsp;&nbsp;
+							<button type="button" id="per-col-down">下一页<span class="glyphicon glyphicon-chevron-right"></span></button>	
+						</div>
+					</div>
+					<div class="per-comment">
+						<div class="context-title" style="width:auto;"><span class="glyphicon glyphicon-comment"></span>我收到的评价</div>
+						<div class="per-com-list">
+							<div class="per-com-list-title">
+								<span style="font-size:14px;"> 来自 <span id="per-com-company1"><a href="#" alt="" class="link-text-2"> 万事屋 </a></span>&nbsp;</span><span> 的评价&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								<a href="#" alt="" class="link-text-2" style="float:right;">查看详细</a>
+							</div>
+							<p class="per-com-list-text">
+								评价时间：<span id="per-com-time1">2015-07-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								活动名称：<span id="per-com-activity1"><a href="#" alt="" class="link-text-4">万事屋</a></span><br>
+								评价：<span id="per-com-intro1">巴拉巴拉巴拉巴拉巴拉巴拉</span>
+							</p>
+						</div>
+						<hr>
+						<div class="per-com-list">
+							<div class="per-com-list-title">
+								<span style="font-size:14px;"> 来自 <span id="per-com-company2"><a href="#" alt="" class="link-text-2"> 万事屋 </a></span>&nbsp;</span><span> 的评价&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								<a href="#" alt="" class="link-text-2" style="float:right;">查看详细</a>
+							</div>
+							<p class="per-com-list-text">
+								评价时间：<span id="per-com-time2">2015-07-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								活动名称：<span id="per-com-activity2"><a href="#" alt="" class="link-text-4">万事屋</a></span><br>
+								评价：<span id="per-com-intro2">巴拉巴拉巴拉巴拉巴拉巴拉</span>
+							</p>
+						</div>
+						<hr>
+						<div class="per-com-list">
+							<div class="per-com-list-title">
+								<span style="font-size:14px;"> 来自 <span id="per-com-company3"><a href="#" alt="" class="link-text-2"> 万事屋 </a></span>&nbsp;</span><span> 的评价&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								<a href="#" alt="" class="link-text-2" style="float:right;">查看详细</a>
+							</div>
+							<p class="per-com-list-text">
+								评价时间：<span id="per-com-time3">2015-07-30</span>&nbsp;&nbsp;&nbsp;&nbsp;
+								活动名称：<span id="per-com-activity3"><a href="#" alt="" class="link-text-4">万事屋</a></span><br>
+								评价：<span id="per-com-intro3">巴拉巴拉巴拉巴拉巴拉巴拉</span>
+							</p>
+						</div>
+						<div  class="per-com-more">
+							<a href="#" alt="" class="link-text-5">查看更多>>></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
